@@ -7,8 +7,7 @@ angular.module('doctorApp')
 		{"reqdate":"12/2/2016","pName":"Karan"}
 	]
 	$scope.generateCertificate=function(){
-		
-		$state.go("app.generateCertificate")
+		$state.go("app.generateCertificate");
 	}
 	$scope.loadOpdList=function(){
 		/*
