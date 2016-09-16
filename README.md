@@ -1,2 +1,2 @@
-# DoctorsModule
-Doctors App
+# DoctorsApp
+Patient Application

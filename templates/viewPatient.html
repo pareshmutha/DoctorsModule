@@ -1,0 +1,31 @@
+<ion-view view-title="Complaint Status">
+ <ion-nav-bar class="clsViewHeader">
+	  <ion-nav-buttons side="left">
+	   <!-- Toggle left side menu -->
+	    <button menu-toggle="left" class="button button-icon icon ion-navicon clsMenuBtn"></button>
+	  </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+	<div class="center">
+		<h4>Total Patients:<span style="color:red">02</span></h4>
+	</div>
+	<div class="clsTable">
+		<div class="row">
+		  <div class="col-10 center">Sr No</div>
+		  <div class="col center">Patient Name</div>
+		  <div class="col center">Mobile No.</div>
+		  <div class="col center">Registration Date</div>
+		  <div class="col-10 center">Action</div>
+		</div>
+		<div class="row" ng-repeat="patient in patientList">
+		  <div class="col-10 center">{{$index + 1}}</div>
+		  <div class="col center">{{patient.pName}}</div>
+		  <div class="col center">{{patient.mobileNo}}</div>
+		  <div class="col center">{{patient.regDate}}</div>
+		  <div class="col-10 center"><a>Edit</a></div>
+		</div>
+		
+	</div>
+	
+  </ion-content>
+</ion-view>

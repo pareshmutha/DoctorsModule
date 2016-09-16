@@ -1,0 +1,58 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content class="clsMenuBody">
+	 <div class="clsUserProfile">
+	 <div class="clsProfileEdit pull-right" ng-click="logout()">Logout</div>
+		
+			
+		<ion-item  menu-close class="clsMenuProfile">
+			<div class="clsProfileImg"></div>
+        </ion-item>
+		
+		
+		<div class="clsProfileTxt list">
+			  <ion-item ng-click="showLogoutbtn()" class="clsUserName">
+				Welcome User
+			  </ion-item>
+		</div>
+	 </div>
+      <ion-list>
+        <ion-item class="clsMenuItem" menu-close ui-sref="app.pendingOpd">
+         <i class="fa fa-pencil-square-o clsMenuIcon" aria-hidden="true"></i> Pending OPD
+        </ion-item>
+        <ion-item class="clsMenuItem" menu-close ui-sref="app.pendingOutstandings">
+         <i class="fa fa-credit-card clsMenuIcon" aria-hidden="true"></i> Pending Outstandings
+        </ion-item>
+		<ion-item class="clsMenuItem" menu-close ui-sref="app.viewPatient">
+          <i class="fa ion-medkit clsMenuIcon" aria-hidden="true"></i> View Patient
+        </ion-item>
+		 <ion-item class="clsMenuItem" menu-close ui-sref="app.addPatient">
+          <i class="fa fa-history clsMenuIcon" aria-hidden="true"></i> Add New Patient
+        </ion-item>
+		 <ion-item class="clsMenuItem" menu-close ui-sref="app.pendingCertificate">
+          <i class="fa fa-history clsMenuIcon" aria-hidden="true"></i> Pending Certificate
+        </ion-item>
+		<ion-item class="clsMenuItem" menu-close ui-sref="app.generateCertificateOnRequest">
+          <i class="fa fa-history clsMenuIcon" aria-hidden="true"></i> Certificate On Request 
+        </ion-item>
+		 
+		
+		
+		
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
