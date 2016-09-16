@@ -1,2 +1,2 @@
 # DoctorsApp
-Patient Application
+Doctors Application
