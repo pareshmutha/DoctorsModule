@@ -157,6 +157,24 @@ $ionicConfigProvider.navBar.alignTitle('center');
       }
     }
   })
+  .state('app.pendingOpdDetails', {
+    url: '/pendingOpdDetails',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pendingOpdDetails.html',
+		controller: 'pendingOpdDetailsCtrl'
+      }
+    }
+  })
+  .state('app.opdDiagnosis', {
+    url: '/opdDiagnosis',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/opdDiagnosis.html',
+		controller: 'opdDiagnosisCtrl'
+      }
+    }
+  })
   
 
   // if none of the above states are matched, use this as the fallback

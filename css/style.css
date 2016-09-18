@@ -383,3 +383,19 @@ ion-header-bar .title,ion-header-bar .header-item{
 	text-align:center;
 	margin-top:30px;
 }
+.clsOpdDetails{
+	 margin-top: 6%;
+}
+.clsOpdDetails .row{
+	    padding: 0px 5px 10px 5px;
+}
+.clsMedTimeSelected{
+	color:green;
+}
+.clsMedTimeNotSelected{
+	color:black;
+}
+.
+.ion-ios-checkmark-outline{
+	color:green;
+}

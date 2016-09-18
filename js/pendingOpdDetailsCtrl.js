@@ -1,13 +1,13 @@
 angular.module('doctorApp')
 
-.controller('pendingOpdCtrl', function($scope, $stateParams,$http,$state,$ionicHistory) {
+.controller('pendingOpdDetailsCtrl', function($scope, $stateParams,$http,$state,$ionicHistory) {
 	
 	$scope.pendingOpds=[
 		{"date":"11/2/2016","pName":"Arun","desc":"Hand Pain"},
 		{"date":"12/2/2016","pName":"Karan","desc":"Head ache"}
 	]
-	$scope.showOpdDetails=function(){
-		$state.go('app.pendingOpdDetails');
+	$scope.diagnosis=function(){
+		$state.go('app.opdDiagnosis');
 	}
 	$scope.loadOpdList=function(){
 		/*
